@@ -1,6 +1,5 @@
 package com.ndgndg91.hellodynamodb.controller
 
-import com.amazonaws.services.dynamodbv2.model.AttributeValue
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.ndgndg91.hellodynamodb.adaptor.domain.PushHistory
 import com.ndgndg91.hellodynamodb.controller.dto.request.PushHistoryRequest
@@ -12,10 +11,7 @@ import java.time.temporal.ChronoUnit
 
 @RestController
 @RequestMapping("/push_history")
-class PushHistoryController(
-    private val repository: PushHistoryRepository,
-    private val objectMapper: ObjectMapper
-) {
+class PushHistoryController(private val repository: PushHistoryRepository) {
 
     @PostMapping
     fun addPushHistory(@RequestBody request: PushHistoryRequest) {

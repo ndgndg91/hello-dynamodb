@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository
 class PushHistoryRepository(
     private val dynamoDBMapper: DynamoDBMapper
 ) {
-    private val logger = LoggerFactory.getLogger(this::class.java);
+    private val logger = LoggerFactory.getLogger(this::class.java)
     fun save(pushHistory: PushHistory) {
         dynamoDBMapper.save(pushHistory)
     }

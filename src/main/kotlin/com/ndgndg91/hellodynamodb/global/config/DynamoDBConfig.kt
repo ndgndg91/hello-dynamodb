@@ -8,8 +8,6 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper
 import org.socialsignin.spring.data.dynamodb.repository.config.EnableDynamoDBRepositories
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
-import org.springframework.context.annotation.DependsOn
-import org.springframework.context.annotation.Lazy
 
 
 @Configuration
