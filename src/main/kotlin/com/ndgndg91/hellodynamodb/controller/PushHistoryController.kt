@@ -1,6 +1,5 @@
 package com.ndgndg91.hellodynamodb.controller
 
-import com.fasterxml.jackson.databind.ObjectMapper
 import com.ndgndg91.hellodynamodb.adaptor.domain.PushHistory
 import com.ndgndg91.hellodynamodb.controller.dto.request.PushHistoryRequest
 import com.ndgndg91.hellodynamodb.controller.dto.response.PushHistoryResponse
